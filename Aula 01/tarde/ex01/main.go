@@ -54,6 +54,9 @@ func Filter(ctx *gin.Context) {
 	//fmt.Println(productMap)
 	ctx.JSON(http.StatusOK, productMap)
 }
+func teste() {
+	fmt.Println("testando")
+}
 
 func FilterById(ctx *gin.Context) {
 	productId := ctx.Param("id")
