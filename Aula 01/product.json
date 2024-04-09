@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1, 
+        "nome": "iPhone", 
+        "cor": "Vermelho", 
+        "preco": 17.50, 
+        "estoque": 5, 
+        "codigo": "ipho123", 
+        "publicacao": true, 
+        "data_de_criacao": "kkkkkk"
+    }, 
+    {
+        "id": 2, 
+        "nome": "MacBook", 
+        "cor": "cinza", 
+        "preco": 1700.50, 
+        "estoque": 10, 
+        "codigo": "mac123", 
+        "publicacao": true, 
+        "data_de_criacao": "yyyyyy"
+    }, 
+    {
+        "id": 3, 
+        "nome": "iPad", 
+        "cor": "branco", 
+        "preco": 170.50, 
+        "estoque": 0, 
+        "codigo": "ipa123", 
+        "publicacao": false, 
+        "data_de_criacao": "zzzzzzz"
+    }
+]
