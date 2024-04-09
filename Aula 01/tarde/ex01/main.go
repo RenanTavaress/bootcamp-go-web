@@ -62,7 +62,7 @@ func FilterById(ctx *gin.Context) {
 
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, gin.H{
-			"erro": "nao foi possivel ler o arquvi JSON",
+			"erro": "nao foi possivel ler o arquvi JSONnn",
 		})
 		return
 	}
