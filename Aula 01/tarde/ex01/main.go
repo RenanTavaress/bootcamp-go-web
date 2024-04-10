@@ -23,6 +23,7 @@ type produto struct {
 	DataDeCriacao string  `json:"data_de_criacao"`
 }
 
+// Função do exercicio 1 da aula 1 tarde
 func Filter(ctx *gin.Context) {
 	sortArr := ctx.Query("sort")
 	sortAscOrDesc := ctx.Query("sortDirection")
@@ -54,10 +55,8 @@ func Filter(ctx *gin.Context) {
 	//fmt.Println(productMap)
 	ctx.JSON(http.StatusOK, productMap)
 }
-func teste() {
-	fmt.Println("testando")
-}
 
+// Função do exercicio 2 da aula 1 tarde
 func FilterById(ctx *gin.Context) {
 	productId := ctx.Param("id")
 	var product []produto
@@ -90,8 +89,8 @@ func FilterById(ctx *gin.Context) {
 func main() {
 	router := gin.Default()
 
-	router.GET("/produtos/:id", FilterById)
 	router.GET("/produtos", Filter)
+	router.GET("/produtos/:id", FilterById)
 
 	router.Run(":8080")
 }
